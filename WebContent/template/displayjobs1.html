@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<a href="#/" style="color:blue"  class="btn btn-primary">  <b>  X Close </b></a> 
+
+<div class="container-fluid" >
+	<div class="row" align="left">
+ 		<div class="col-sm-12" style="background: rgba(76, 175, 80, 0.0)"> 
+ 	
+<table border="2px"  class="container" style="background: rgba(76, 175, 80, 0.0);width:100%" >
+
+<tr>
+<th>company  </th> <th>role  </th> <th>skillsRequired  </th> <th>eligibilityCriteria   </th> <th>Salary   </th> <th>dateofInterview </th>  <th>Company Address   </th> <th>Company URL  </th>
+</tr>
+
+<tr ng-repeat="job in jobs" class="table-striped">
+<td>{{job.company}}</td> <td>{{job.role}}</td> <td>{{job.skillsRequired}}</td> <td>{{job.eligibilityCriteria}}</td> <td>{{job.ctc}}</td> <td>{{job.dateofInterview}} </td> <td> {{job.addressOfTheCompany}}</td>  <td>{{job.urlOFTheCompany}}                                
+<br> <a href="#/jobreg">Apply Now</a> </td>
+
+
+</tr>
+
+
+
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

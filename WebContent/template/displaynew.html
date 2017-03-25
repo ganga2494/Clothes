@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<a href="#/" style="color:blue"  class="btn btn-primary">  <b>  X Close </b></a> 
+
+<div class="container-fluid" >
+	<div class="row" align="left">
+ 		<div class="col-sm-12" style="background: rgba(76, 175, 80, 0.0)"> 
+ 	
+<table border="2px"  style="background: rgba(76, 175, 80, 0.9);width:100%" >
+
+<tr>
+<th>Blog Title</th> <th>Blog Content</th> <th>Created By</th> <th>BLOG ID</th> <th>STATUS</th> <th>ACCEPT</th> <th>REJECT</th>
+</tr>
+<div ng-controller="BlogController">
+<tr ng-repeat="blog in nblogs" class="table-striped">
+<td>{{blog.title}}</td> <td>{{blog.description}}</td> <td>{{blog.user.userid}}</td> <td>{{blog.blogId}}</td> <td>{{blog.status}}</td> <td><button class="btn btn-success" ng-click="approveBlog()">Approve Blog</button>
+</td><td><button class="btn btn-danger" ng-click="rejectBlog()">Reject Blog</button>
+</td>
+
+</tr>
+
+</div>
+
+</table>
+</div>
+</div>
+</div>
+
+</body>
+</html>

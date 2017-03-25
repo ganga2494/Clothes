@@ -1,0 +1,37 @@
+<div class="container">
+
+	<p>
+	<p>
+	<p>
+	<p>
+	
+	<p>
+	<p>
+	<p>
+	<p>
+	
+	<div class="form-group has-feedback"></div>
+
+  Friend Requests for you:
+
+  <p><input type="text" ng-model="search"></p>
+
+
+	<div ng-repeat="friendRequest in friendsr | filter: search">
+
+		<fieldset>
+			<legend></legend>
+			
+<p>Friend id: {{friendRequest.user.userid}} &nbsp; &nbsp;&nbsp;
+			<p>Name: {{friendRequest.user.fullname}} &nbsp; &nbsp;&nbsp; 
+			<button type="button"  ng-click="accept(friendRequest.user.userid)" class="btn btn-success btn-sm">Accept Friend Request</button>&nbsp; &nbsp;&nbsp;
+			<button type="button"  ng-click="reject(friendRequest.user.userid)" class="btn btn-warning btn-sm">Reject Friend Request</button>
+			
+			
+
+			
+		</fieldset>
+	</div>
+
+
+</div>
